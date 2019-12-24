@@ -5,7 +5,7 @@ def line(array)
   else
     list = "The line is currently:"
     for i in array
-      list =+ " #{i}. #{array[i]}"
+      list = list + " #{i}. #{array[i]}"
     end
     puts list
   end
