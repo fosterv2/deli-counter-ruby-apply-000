@@ -4,9 +4,10 @@ def line(array)
     puts "The line is currently empty."
   else
     list = "The line is currently:"
-    for i in array
-      list = list + " #{i}. #{array[i]}"
-    end
+    array.each_index {|ind| list += " #{ind + 1}. #{array[ind]}" }
+    #for i in array
+    #  list = list + " #{i}. #{array[i]}"
+    #end
     puts list
   end
 end
